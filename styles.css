@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gantari', sans-serif;
+}
+
+body{
+    background: radial-gradient(circle, #fdd, #ddd);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#first-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    
+}
+
+
+.icons-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 70px;
+    background-color: rgb(255, 253, 251);
+    padding: 25px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+}
+
+.card-1{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    position: relative;
+
+
+    border-radius: 12px;
+}
+
+.card-1 img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-1 .img-info{
+    height: 35%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 13px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.img-info span{
+    color: green;
+    font-weight: bold;
+}
+
+.img-info p{
+    color: #adabad;
+}
+
+.card-1 .play-button{
+    position: absolute;
+    width: 70px;
+    left: 124px;
+    top: 22%;
+    padding: 20px;
+    background-color: #c5bfbf1b;
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 100%;
+   
+    cursor: pointer;
+}
+
+.card-1 .heart{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 40px;
+    background: none;
+    border: none;
+    margin-right: 10px;
+    padding: 7px;
+}
+
+#first-row .nav-bar{
+    height: 40px;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar input{
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.nav-bar i{
+    padding: 13px 20px 10px 0; 
+    color: #adabad;
+}
+
+.categories{
+    height: 50px;
+    width: 80%;
+    display: flex ;
+    gap: 5px;
+    justify-content: end;
+}
+
+.categories button{
+    padding: 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+.categories .primary{
+    background-color: #0000ff;
+    width: 100px;
+}
+
+.categories .secondary{
+    padding: 15px;
+    background-color: #646464;
+}
+
+#second-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+#second-row .profile-card{
+    height: 110px;
+    width: 70%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    border-radius: 12px;
+
+}
+
+.profile-card .profile{
+    width: 25%;
+    height: 70%;
+    background-color: #646464;
+    margin-left: 15px;
+    border-radius: 100%;
+}
+
+.profile-info{
+    margin-left: 10px;
+}
+
+.profile-info h2{
+    font-size: 17px;
+}
+
+.profile-info h2 i{
+    padding: 7px 5px;
+    font-size: 13px;
+    color: #09b309;
+}
+
+.profile-info p{
+    font-size: 12px;
+    color: #adabad;
+}
+
+
+#second-row .messenger{
+    width: 80%;
+    height: 250px;
+    background-color: #ffffff;
+
+    border-radius: 15px;
+
+    display: grid;
+    
+    grid-auto-rows: 80px;
+
+    overflow-y: scroll;
+}
+
+.messenger::-webkit-scrollbar{
+    width: 5px;
+    padding: 10px;
+}
+
+.messenger::-webkit-scrollbar-thumb{
+    background-color: #646464;
+    border-radius: 10px;
+}
+
+.first-message{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.first-message .img-profile{
+    width: 20%;
+    height: 70%;
+    margin-left: 10px;
+    background-color: #646464;
+
+    border-radius: 10px;
+}
+
+.first-message #message-content{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 10px 0 10px;
+
+    border-bottom: 1px solid #9e9b9ba3;
+}
+
+.profile-content h2{
+    font-size: 17px;
+    
+}
+
+.profile-content p{
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.amount p{
+    margin-bottom: 5px;
+}
+
+.amount{
+    padding-top: 7px; 
+    font-size: 12px;
+    color: #adabad;
+}
+
+
+
+.amount span{
+    background-color: #0ff;
+    margin-top: 5px;
+    padding: 0 7px;
+    border-radius: 20px;
+    
+}
+
+#second-row .on-off{
+    width: 335px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 50px;
+}
+
+.on{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   width: 27%;
+   height: 70%; 
+   background-color: #0000ff;
+   border-radius: 30px;
+   color: #fff;
+   padding: 2px 5px;
+
+   order: 3;
+
+   margin-left: 15px;
+}
+
+.on span{
+    margin-left: 10px;
+}
+
+.on > div{
+    height: 80%;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.off{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   width: 27%;
+   height: 70%; 
+   background-color: #adabad;
+   border-radius: 30px;
+   color: #fff;
+   padding: 2px 5px;
+
+   
+
+}
+
+.off span{
+    margin-right: 10px;
+}
+
+.off > div{
+    height: 80%;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+#third-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.social-card{
+    width: 75%;
+    height: 400px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 14px;
+
+    
+}
+
+.social-card .bg-card{
+    width: 100%;
+    height: 45%;
+    object-position: 100% 50%  ;
+    object-fit :cover;
+
+    border-radius: 14px 14px 0px 0px;
+    
+}
+
+.social-card .user{
+    width: 110px;
+    padding-top: 4px;
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 125px;
+    left: 32%;
+
+    border-radius: 100%;
+}
+
+
+.social-card .user img{
+    width: 90%;
+    border-radius: 100%;
+    
+}
+
+.social-card .personal-info{
+    width: 100%;
+    height: 50%;
+    
+    
+}
+
+.description{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.description h2{
+    font-size: 17px;
+}
+
+.description p{
+    font-size: 14px ;
+}
+
+.description  i{
+    color: #09b309;
+}
+
+.skill{
+
+    padding-top: 15px;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill span{
+    background-color: #adabad;
+    width: 30%;
+
+    border-radius: 10px;
+}
+
+
+.stats{
+    width: 380px;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    
+    padding: 10px;
+
+    border-radius: 14px;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+}
+
+.stat{
+    width: 100px;
+    height: 80px;
+    padding: 40px ;
+    padding-left: 10px;
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-left: 10px;
+
+    font-size: 11px;
+    background-color: #eaeaea;
+    color: #a8a8a8;
+
+    border-radius: 14px;
+}
