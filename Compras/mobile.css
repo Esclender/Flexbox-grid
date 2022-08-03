@@ -2,7 +2,9 @@ body{
     grid-template-columns: 100vw;
    
     width: 40rem;
-    grid-template-rows: 1fr 50rem;
+    grid-template-rows: 1fr 1fr 10rem;
+    
+   
 }
 
 #main-content{
@@ -130,7 +132,22 @@ body{
 }
 
 #payment__container{
-    height: 58rem;
+    height: 60rem;
 
     margin-bottom: 3rem;
+}
+
+#social-medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(110, 142, 245);
+}
+
+#social-medias a img{
+    width: 3.5rem;
+}
+
+#social-medias span{
+    font-size: 1.4rem;
 }
