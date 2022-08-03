@@ -1,0 +1,136 @@
+body{
+    grid-template-columns: 100vw;
+   
+    width: 40rem;
+    grid-template-rows: 1fr 50rem;
+}
+
+#main-content{
+    grid-template-rows: 15rem  70rem 30rem;
+}
+
+
+
+.header__container{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+
+
+.header__container h1{
+    display: none;
+}
+
+.header__container .logo{
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.header__container .nav-bar{
+    width: 35rem;
+
+    margin-left: 2rem;
+}
+
+.nav-bar .select{
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.nav-bar .search__nav{
+    padding: 0;
+    border: none;
+}
+
+#main__container{
+    align-items: flex-start;
+    padding-left: 1.5rem;
+}
+#main__container .discover__options{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    padding-left: 1rem;
+    gap: 0.5rem
+    ;
+}
+
+
+#main__container .discover__display{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(7, 10rem);
+    width: 37rem;
+}
+
+.discover__display .c-2{
+    grid-row: 3 / 4;
+}
+
+.discover__display .c-2{
+    grid-row: 3 / 4;
+}
+
+.discover__display .c-3{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.discover__display .c-4{
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+}
+
+.discover__display .second-row{
+    grid-row: 5 / 8;
+    grid-column:  1 / 3;
+
+    
+}
+
+.c-5, .c-6{
+    height: 50%;
+}
+
+#footer__container {
+    align-items: flex-start;
+    
+}
+
+#footer__container .preview__cards{
+    height: 90%;
+    width: 100vw;
+    overflow: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity ;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+}
+
+.preview__cards .pr-card{
+    scroll-snap-align: center;
+    width: 20rem;
+}
+
+#footer__container .preview{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem
+    ;
+}
+
+.preview .options{
+    width: 80%;
+}
+
+#payment__container{
+    height: 58rem;
+
+    margin-bottom: 3rem;
+}
